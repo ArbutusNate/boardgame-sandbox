@@ -40,18 +40,6 @@ class Dashboard extends Component {
       })
   }
 
-  // getFriends = () => {
-  //  Axios.get(`api/user/${this.props.uID}/friends`)
-  //    .then(res => {
-  //      this.setState({
-  //        friends: res.data.friends,
-  //        groups: res.data.groups
-  //      })
-  //    }).catch(error => {
-  //      console.error(error);
-  //    })
-  // }
-
   componentWillMount(){
     document.body.id = "db-scroll";
   }
@@ -102,13 +90,13 @@ class Dashboard extends Component {
        <Background backgroundName="dash-background">
         <div className="center mainContainer">
           <div className="loggedIn col s6 right">Logged in as {this.props.userName}
-            <UserProfileThumb cardSrc={this.props.cardGraphic} cardNum={this.props.cardNum} scroll={this.scrollToUserProfile}/>
+            {/* <UserProfileThumb cardSrc={this.props.cardGraphic} cardNum={this.props.cardNum} scroll={this.scrollToUserProfile}/> */}
           </div>
           <img src={logo} className="siteLogoDash" alt="logo" /><h1 className="logoH1Dash">GameVault</h1>
         </div>
       <div className="container dashContainer">
               <div className="row dashRow">
-                <Gamelist games={this.state.games} uID={this.props.uID} notification={this.notify} setAppState={this.props.setAppState} increaseExp={this.props.increaseExp} />
+                <Gamelist games={this.state.games} wishlist={this.props.wishlist} uID={this.props.uID} notification={this.notify} setAppState={this.props.setAppState} increaseExp={this.props.increaseExp} />
               </div>
 
               <Button data-activates={'my-side-nav'}>test button</Button>

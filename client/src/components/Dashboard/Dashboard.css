@@ -11,6 +11,11 @@
   margin: 75px 0;
 }
 
+.mainContainer {
+  margin-top: -45px;
+  margin-bottom: -85px;
+}
+
 .list-overflow-container {
   max-height: 545px;
   border: 1px #DDDDDD solid;

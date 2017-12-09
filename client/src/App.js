@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter} from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom';
 import { firebaseAuth } from './config/constants';
 import Dashboard from "./components/Dashboard";
 import Splash from "./components/Splash";
@@ -53,6 +53,7 @@ class App extends Component {
 							cardNum: response.data.cardNum,
 							groups: response.data.groups,
 							games: response.data.games,
+							wishlist: response.data.wishlist,
 							friends: response.data.friends,
 							cardGraphic: response.data.cardGraphic
 							});
