@@ -15,7 +15,7 @@ import "./UserProfileThumb.css"
 
 const UserProfileThumb = props => {
 
-			return (<div className="col s6 right UserProfileScroll">
+			return (<div className="col s6 right UserProfileScroll" onClick={props.scroll}>
 					<img src={props.cardSrc} alt={props.cardSrc} className="userThumbCard"/>
 			</div>
 			)

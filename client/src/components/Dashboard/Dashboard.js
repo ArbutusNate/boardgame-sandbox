@@ -6,12 +6,12 @@ import Newsfeed from "../Newsfeed";
 import HoverButtons from "../HoverButtons";
 import Background from "../Background"
 import logo from "../../assets/img/logo.png"
-import LevelBar from "../LevelBar";
 import UserProfile from "../UserProfile";
 import UserProfileThumb from "../UserProfileThumb";
 import Friendspace from "../FriendSpace";
 import PopFriendSpace from "../PopFriendSpace";
 import GroupSpace from "../GroupSpace";
+import Header from "../Header";
 import 'react-toastify/dist/ReactToastify.min.css';
 import { ToastContainer, toast } from 'react-toastify';
 import scrollToComponent from 'react-scroll-to-component';
@@ -88,11 +88,11 @@ class Dashboard extends Component {
   render (props) {
     return (
        <Background backgroundName="dash-background">
+       <Header exp={this.props.exp} toNextLevel={this.props.toNextLevel} />
         <div className="center mainContainer">
           <div className="loggedIn col s6 right">Logged in as {this.props.userName}
             {/* <UserProfileThumb cardSrc={this.props.cardGraphic} cardNum={this.props.cardNum} scroll={this.scrollToUserProfile}/> */}
           </div>
-          <img src={logo} className="siteLogoDash" alt="logo" /><h1 className="logoH1Dash">GameVault</h1>
         </div>
       <div className="container dashContainer">
               <div className="row dashRow">
@@ -142,7 +142,6 @@ class Dashboard extends Component {
                 <Newsfeed />
               </div>
 
-          <LevelBar exp={this.props.exp} toNextLevel={this.props.toNextLevel}/>
           <HoverButtons uID={this.props.uID} notifications={this.state.notifications} getNotifications={this.getNotifications}/>
           <ToastContainer
           position="top-right"

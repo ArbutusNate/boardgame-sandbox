@@ -1,0 +1,47 @@
+.headerLogo {
+    margin: -105px auto 0;
+    width: 275px;
+}
+
+.logoH1Header {
+    font-family: 'Wendy One', sans-serif;
+    text-decoration: none;
+    padding: 0;
+    font-size: 40px;
+    text-shadow: 2px 5px 8px rgba(0, 0, 0, 0.56);
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+nav {
+    background: #3c466a;
+    position: fixed;
+    z-index: 2;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    top: -14px;
+}
+
+.settingsButton {   
+    position: absolute;
+    right: 13px;
+    top: 6px;
+    background-color: #6573a5 !important;
+    border-radius: 15px;
+    width: 0;
+}
+
+.settingsIcon {
+    left: 18px;
+    top: -14px;
+    position: absolute;
+    color: #fbfcff !important;
+}
+
+.siteLogoHeader {
+    width: 50px;
+    margin-top: 28px;
+}

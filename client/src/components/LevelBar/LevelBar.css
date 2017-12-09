@@ -1,17 +1,14 @@
 
 .levelDiv {
-	width: 150px;
+	width: 125px;
 	margin: 0 0 30px 15px;
-	bottom: 0;
-	left: 0;
-	position: fixed;
 }
 
 .levelHeader {
 	font-family: 'Wendy One', sans-serif;
 	text-align: center;
-    font-size: 22px;
-    margin-bottom: 5px;
+    font-size: 19px;
+    margin-bottom: 0;
 }
 
 .levelText {
